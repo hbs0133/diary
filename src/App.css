@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hana_handwriting';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_05@1.0/Hana_handwriting.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  font-family: 'Pretendard-Regular';
+}
+.container{
+  width: 1024px;
+  height: 500px;
+  background-image: url('./Img/bg3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: flex;
+  position: relative;
+  padding: 40px 0;
+  position: relative;
+}
+
+
+/* 에디터 */ 
+.DiaryEditor{
+  display: flex;
+  position: absolute;
+  left: 18%;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  gap: 10px;
+}
+.DiaryEditor h1 {
+  margin: 0;
+}
+
+.DiaryEditor input {
+  border: none;
+  border-bottom: 1px solid #000;
+  padding: 8px 0;
+  width: 200px;
+  font-family: 'Hana_handwriting';
+  font-size: 20px;
+}
+.DiaryEditor input::placeholder{
+  font-family: 'Hana_handwriting';
+  font-size: 20px;
+}
+
+.DiaryEditor textarea {
+  border: 1px dashed #000;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  resize: none;
+  font-family: 'Hana_handwriting';
+  font-size: 20px;
+}
+.DiaryEditor textarea::placeholder{
+  font-family: 'Hana_handwriting';
+  font-size: 20px;
+}
+
+.DiaryEditor span {
+  font-weight: bold;
+}
+
+.DiaryEditor select {
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: 'Pretendard-Regular';
+  font-size: 17px;
+}
+
+.DiaryEditor button {
+  cursor: pointer;
+  border: none;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  font-size: 20px;
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+}
+
+/* 리스트 */
+.DiaryList {
+  position: absolute;
+  left: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.DiaryList h4{
+  margin: 0;
+  border-bottom: 1px solid #000;
+  padding: 5px 0;
+}
+
+
+
+/* 아이탬 */
+
+.DiaryItem{
+  border: 1px dashed #000;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #faf7f7;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 10px;
+  color: #222;
+}
+.DiaryItem .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.DiaryItem .content {
+  font-size: 25px;
+  font-family: 'Hana_handwriting';
+  border: 1px dotted #c5c5c5;
+  padding: 10px;
+}
+.DiaryItem .content textarea {
+  border: none;
+  resize: none;
+  font-family: 'Hana_handwriting';
+  font-size: 25px;
+}
+.DiaryItem .content textarea:focus {
+  outline: none;
+}
+
+.DiaryItem .btn{
+  display: flex;
+  gap: 10px;
+}
+.DiaryItem .btn button{
+  border: none;
+  background: transparent;
+  font-family: 'Pretendard-Regular';
+  font-weight: bold;
+}
+
+
+@media all and (max-width : 1024px){
+  .container{
+    background: none;
+    border: 1px solid #000;
+  }
+}
